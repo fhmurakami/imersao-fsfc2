@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: nest-api
+      app: nest-api
   template:
     metadata:
       name: nest-api
       labels:
-        app.kubernetes.io/name: nest-api
+        app: nest-api
     spec:
       containers:
         - name: nest-api
-          image: fhmrk/imersaofsfc-desafio2-backend
+          image: "fhmrk/imersaofsfc-desafio2-backend:latest"
           ports:
             - containerPort: 3000

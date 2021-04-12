@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: react-app
+      app: react-app
   template:
     metadata:
       name: react-app
       labels:
-        app.kubernetes.io/name: react-app
+        app: react-app
     spec:
       containers:
         - name: react-app
-          image: fhmrk/imersaofsfc-desafio2-frontend
+          image: "fhmrk/imersaofsfc-desafio2-frontend:latest"
           ports:
             - containerPort: 3000

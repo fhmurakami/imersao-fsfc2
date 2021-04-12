@@ -19,6 +19,7 @@ kubectl port-forward service/react-app 3001:3000
 ```
 
 Para acessar a aplicação(frontend) acesse http://localhost:3001
+
 Para acessar a aplicação(backend) acesse http://localhost:3000/routes
 
 ### Para ver os pods
